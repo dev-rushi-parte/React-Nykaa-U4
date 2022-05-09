@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import { FiHeart } from "react-icons/fi";
 import "./Hover.css";
-import Navbar from "../Header/Navbar";
+
 import { CartContext } from "../Context/CartProvider";
 const Grid = {
   padding: "5px",
@@ -24,10 +24,11 @@ export default function Products({ data }) {
     let flag = false;
     for (let i = 0; i < data.length; i++) {
       if (data[i].item === elem.item) {
-        alert("iteam already");
-        flag = true;
+        alert("Iteam Already In Cart");
         elem.qty = elem.qty+ 1;
-        console.log(elem.qty)
+        flag = true;
+        
+        
       }
     }
 
@@ -37,7 +38,7 @@ export default function Products({ data }) {
       setData([...data])
       setCartLength(data.length)
       localStorage.setItem("cartProducts", JSON.stringify(data));
-      alert("iteam added");
+      
     }
   };
 

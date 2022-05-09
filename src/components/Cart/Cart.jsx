@@ -28,7 +28,8 @@ export default function Cart() {
     setTotal(newtotal)
   }
   const HandleClick=()=>{
-navigate('/address')
+    localStorage.setItem("total", JSON.stringify(total));  
+navigate('/address');
   }
   
   const handleDelete=(i)=>{
@@ -115,16 +116,18 @@ return elem.item !== i.item
         <h4>Payment Details</h4>
         <div
           style={{
-            width: "100%",
-            border: "1px solid red",
-            height: "200px",
+            width: "90%",
+            
+            fontWeight:"bold",
             display: "flex",
+            justifyContent: "space-between",
           }}
         >
-          <div style={{display:"flex"}}>
+          <div>
             <p>Bag Total</p>
-            <p>{total}</p>
+            
           </div>
+          <div><p>{total}</p></div>
         </div>
         <div
           style={{
@@ -132,6 +135,7 @@ return elem.item !== i.item
             justifyContent: "space-between",
             padding: "5px",
             alignItems: "flex-start",
+            
           }}
         >
           <div
