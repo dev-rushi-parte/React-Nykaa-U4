@@ -4,29 +4,22 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { AiOutlineDelete, AiOutlineRight } from "react-icons/ai";
 
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../Context/CartProvider";
-import { useNavigate } from "react-router-dom";
-
-
-import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
-  var totalPrice=0;
+const {cart,setCartLength,data,setData} = useContext(CartContext);
   const navigate=useNavigate();
   const [state, setState] = React.useState({
     right: false,
   });
 
-  const {cart,setCartLength,data,setData} = useContext(CartContext);
- const navigate = useNavigate();
   useEffect(() => {
     totalPrice(data);
   }, [data])
   
   const [total, setTotal] = useState(0);
 
-  
-  
 
   let totalPrice =(data)=>{
     let newtotal=data.reduce((acc,elem)=>{
@@ -36,12 +29,12 @@ export default function Cart() {
   }
   const HandleClick=()=>{
     localStorage.setItem("total", JSON.stringify(total));  
-navigate('/address');
+    navigate('/address');
   }
   
   const handleDelete=(i)=>{
     let newData = data.filter((elem)=>{
-return elem.item !== i.item
+    return elem.item !== i.item
     })
     localStorage.setItem("cartProducts",JSON.stringify(newData))
     setData([...newData])
@@ -49,13 +42,6 @@ return elem.item !== i.item
     totalPrice(newData)
   }
 
-
-  const [total, setTotal] = useState(1000);
-
-  let cartdata = JSON.parse(localStorage.getItem("cartProducts")) ||[];
-    const [data, setdata]=useState(cartdata);
-  //   console.log(cartdata);
-  // let {cart}= CartContext(CartContext);
 
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -68,14 +54,7 @@ return elem.item !== i.item
 
     setState({ ...state, [anchor]: open });
   };
-const deleteItem=(id)=>{
 
-  let newData = data.filter((elem) => {
-    return elem.item  !== id;
-  });
-  setdata(newData);
-  localStorage.setItem("cartProducts",JSON.stringify(newData));
-}
 
   const list = (anchor) => (
     <Box
@@ -88,11 +67,6 @@ const deleteItem=(id)=>{
 
         <h3>Shopping Bag({cart})</h3>
         {data.map((i) => {
-
-        <h3>Shopping Bag({cartdata.length})</h3>
-        {data.map((i) => {
-          totalPrice +=i.MRP*i.qty;
-             localStorage.setItem("total", JSON.stringify(totalPrice));
 
           return (
             <>
@@ -123,12 +97,12 @@ const deleteItem=(id)=>{
 
 
                 <div style={{}}>
-                  <AiOutlineDelete style={{ fontSize: "20px",cursor:"pointer"}} onClick={()=>handleDelete(i)} />
 
-                <div onClick={() => deleteItem(i.item)}>
-                  <AiOutlineDelete style={{ fontSize: "20px" }} />
+               
+                  <AiOutlineDelete style={{ fontSize: "20px" }} onClick={() => handleDelete(i)} />
 
-                </div>
+                
+              </div>
               </div>
               <div
                 style={{
@@ -145,6 +119,7 @@ const deleteItem=(id)=>{
                 </div>
                 <div>₹{i.MRP}</div>
               </div>
+              
             </>
           );
         })}
@@ -183,7 +158,7 @@ const deleteItem=(id)=>{
           >
             <span>Grand Total:</span>
             <br />
-            <span>₹{totalPrice}
+            <span>₹{total}
 
             </span>
           </div>
@@ -196,7 +171,7 @@ const deleteItem=(id)=>{
               alignItems: "center",
             }}
           >
-            <button onClick={()=>navigate("/address")}
+            <button
               style={{
                 width: "100%",
                 height: "100%",

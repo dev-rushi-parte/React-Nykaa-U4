@@ -9,7 +9,6 @@ import { CartProvider } from "./components/Context/CartProvider";
 function App() {
   return (
     <BrowserRouter>
-
       {/* <Navbar />
       <Productpage /> */}
       <CartProvider>
@@ -17,10 +16,7 @@ function App() {
       </CartProvider>
       {/* <Footer /> */}
 
-   
-      <Mainroutes />
-    
-
+      {/* <Mainroutes /> */}
     </BrowserRouter>
   );
 }

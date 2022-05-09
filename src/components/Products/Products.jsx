@@ -15,6 +15,7 @@ const Grid = {
 export default function Products({ data }) {
   let navigate = useNavigate();
   const {setData,setCartLength} = useContext(CartContext);
+ 
 
 
   const SetCartdata = (elem) => {
@@ -25,10 +26,10 @@ export default function Products({ data }) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].item === elem.item) {
         alert("Iteam Already In Cart");
-        elem.qty = elem.qty+ 1;
+        data[i].qty++;
         flag = true;
         
-        
+        localStorage.setItem("cartProducts", JSON.stringify(data));
       }
     }
 
@@ -40,6 +41,7 @@ export default function Products({ data }) {
       localStorage.setItem("cartProducts", JSON.stringify(data));
       
     }
+    
   };
 
   const Handleclick = (e) => {
