@@ -1,0 +1,397 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "username": "getakhil012@gmail.com",
+      "password": "admin",
+      "id": 2
+    },
+    {
+      "username": "getakhil012@gmail.com",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "username": "getakhil012@gmail.com",
+      "password": "admin",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "username": "joj;",
+      "id": 8
+    },
+    {
+      "username": "1",
+      "password": "1",
+      "id": 9
+    },
+    {
+      "username": "tuj",
+      "password": "12",
+      "id": 10
+    },
+    {
+      "username": "123",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "username": "123",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "username": "12",
+      "password": "12",
+      "id": 16
+    },
+    {
+      "username": "123",
+      "password": "123",
+      "id": 17
+    },
+    {
+      "username": "1",
+      "password": "1",
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "username": "1213",
+      "password": "13123",
+      "id": 20
+    },
+    {
+      "username": "123",
+      "password": "123",
+      "id": 21
+    }
+  ],
+  "sellers": [
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/9/8/98ae754HUDAB00000440_1.jpg",
+      "name": "Huda Beauty Rose Quartz Eyeshadow Palette",
+      "price": "₹3225"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/8/a/8a2ce2b8809559347626_primary.jpg",
+      "name": "LANEIGE Water Sleeping Mask",
+      "price": "₹700"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/8/9/8901030399138_h.jpg",
+      "name": "Lakme Eyeconic Curling Mascara - Black",
+      "price": "₹248"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/a/3/a3ec742KHLS_MDRCON_0.jpg",
+      "name": "Kiehl's Midnight Recovery Concentrate Serum",
+      "price": "₹1785"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/7/67a7d60LOREA00000002_1.jpg",
+      "name": "L'Oreal Paris Paris Revitalift Hyaluronic Acid Serum",
+      "price": "₹799"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/0/602004072849n.jpg",
+      "name": "Benefit Cosmetics Hoola Matte Bronzer Mini",
+      "price": "₹1304"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/m/a/maybelline-new-york-lasting-drama-gel-eyeliner---01-black.jpg",
+      "name": "Maybelline New York Lasting Drama Gel Eyeliner",
+      "price": "₹300"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/f/a/face-primer.jpg",
+      "name": "Nykaa Prep Me Up! Face Primer",
+      "price": "₹439"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/f/e/fe8558826118_S1-8901030704680.jpg",
+      "name": "Tresemme Keratin Smooth With Argan Oil Shampoo",
+      "price": "₹519"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/5/9/59f542c86800687900_1.jpg",
+      "name": "Neutrogena UltraSheer Dry Touch Sunblock SPF 50+",
+      "price": "₹520"
+    },
+    {
+      "img": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/2/a/2abbcfbNYKMCF0000002_1NV.jpg",
+      "name": "MCaffeine Exfoliating Coffee Body Scrub",
+      "price": "₹199"
+    }
+  ],
+  "Kites": [
+    {
+      "img": "https://images-static.nykaa.com/uploads/f738b255-a191-4c58-832f-e228fb846741.jpg?tr=w-200,cm-pad_resize",
+      "head": "3 Piece Hydrate Kit",
+      "price": "At ₹2950 (Save 40%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/6dbc95e4-8cf6-47ed-9abc-c664a6405ef1.jpg?tr=w-200,cm-pad_resize",
+      "head": "Everyday Pink Kit At",
+      "price": "₹1435 (Save 30%) "
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/3558e6c1-92c2-45a2-9e46-1cbdfe314250.jpg?tr=w-200,cm-pad_resize",
+      "head": "Lip Mask Duo",
+      "price": "At ₹1380"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/07fa9989-51d2-4dde-87f4-76e16d26ebcd.jpg?tr=w-200,cm-pad_resize",
+      "head": "Serum 20ml Duo",
+      "price": "At ₹5850 (Save 25%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/f738b255-a191-4c58-832f-e228fb846741.jpg?tr=w-200,cm-pad_resize",
+      "head": "3 Piece Hydrate Kit",
+      "price": "At ₹2950 (Save 40%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/5b70697f-3bc2-4900-ab9c-46d1bb76d235.jpg?tr=w-200,cm-pad_resize",
+      "head": "Benetint & Hoola Duo",
+      "price": "At ₹2500 (Save 45%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/a6b2ac5b-681a-4376-a932-838a8307bc12.jpg?tr=w-200,cm-pad_resize",
+      "head": "Summer Skincare Kit",
+      "price": "At ₹1346 (Save 35%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/4f4399f0-0c8b-4ea9-b2c9-4724c7cde0eb.jpg?tr=w-200,cm-pad_resize",
+      "head": "Ultra Facial Duo",
+      "price": "At ₹1800 (Save 25%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/a9aa8e4a-bec7-4097-8729-28a1b2c0e951.jpg?tr=w-200,cm-pad_resize",
+      "head": "2 Piece Lip & Eye Kit",
+      "price": "At ₹1050 Only"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/444385a1-a352-4ae1-82de-cd3ffe274bc9.jpg?tr=w-200,cm-pad_resize",
+      "head": "Glow All Day Set",
+      "price": "At ₹1299 (Save 55%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/ae28c8d4-88ec-4b79-9b31-44fb221a5590.jpg?tr=w-200,cm-pad_resize",
+      "head": "Fix+ & Mehr",
+      "price": "At ₹2210 (Save 40%)"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/c17a6a58-9828-48cf-b569-852fee3081ea.jpg?tr=w-200,cm-pad_resize",
+      "head": "Mini Matte Lip Duo",
+      "price": "At ₹1090 (Save 21%)"
+    }
+  ],
+  "amazing": [
+    {
+      "img": "https://images-static.nykaa.com/uploads/031993ba-d27d-458d-aaff-d3291575f93f.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 50% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/4472ebad-52c8-4b83-9c9a-a30b286a5cd7.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 25% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/af8dbf7c-6d38-4b1a-b2b7-fc7bbd2f248c.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 38% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/fe901da3-6f68-4041-9b4c-d1e68a0df7cb.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 25% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/5cdb6212-4037-4ec7-9004-19c161bd14ad.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 20% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/448027e5-e02f-4bb4-86dd-18f1afdc85ba.jpg?tr=w-400,cm-pad_resize",
+      "name": "Gift On All Orders"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/3d86c9d6-9899-42c3-859f-7500b99a8e9b.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 15% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/358a843c-ba01-4493-aef4-e7095c886174.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 50% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/a4d1224c-3b24-4dad-a2cf-9ca2d1430885.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 40% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/00d76c8f-1bbc-4c75-bac4-1a7d21c08dda.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 35% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/02aff89d-ccbe-4e3a-a83b-8ba845194f40.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 60% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/f12bc59b-e308-49af-94e9-1e6807d47380.jpg?tr=w-400,cm-pad_resize",
+      "name": "Free Crystal Serum"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/b8fcdf83-6ba3-4cd5-93b2-188bf7d6999e.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 40% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/faeb1ca5-c499-4f39-84b6-5f0c08be9451.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 40% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/ec877350-e693-4641-9182-64db66f4b0ab.JPG?tr=w-400,cm-pad_resize",
+      "name": "Full Size Product on ₹1400"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/6254b021-84a5-4c92-839e-70e1716adc0c.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 30% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/5187f920-1e34-4a73-9e8b-f10137e81f50.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 45% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/6ff98004-198b-4693-9e4c-440d8524c5c2.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 30% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/290779d5-f5c8-4e6e-883f-d5b742a5c627.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 10% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/11fb988a-8108-45cd-bf31-5984803de345.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 40% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/a9f3baa5-55e3-4607-b7c3-d00b4eab72ac.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 25% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/08b50116-5c54-4dec-86ca-67bacf84e5fb.jpg?tr=w-400,cm-pad_resize",
+      "name": "Flat 30% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/3ee4a487-59ac-495f-be37-c247ab94009e.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 30% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/aab9b789-af6c-483e-a96e-c4d03f4cc31b.jpg?tr=w-400,cm-pad_resize",
+      "name": "Up To 45% Off"
+    },
+    {
+      "img": "https://images-static.nykaa.com/uploads/791da25c-fe2c-4134-9ca4-8ecdb197f77c.jpg?tr=w-400,cm-pad_resize",
+      "name": "Upto 50% Off"
+    }
+  ],
+  "blockbuster": [
+    {
+      "img1": "https://images-static.nykaa.com/uploads/45ce1778-eb17-4c14-afb5-c4ccc5d5b763.jpeg?tr=w-240,cm-pad_resize",
+      "name": "Upto 50% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/41f8bcb9-9f87-4549-a0d9-99eed448df51.jpg?tr=w-240,cm-pad_resize",
+      "name": "10% off on ₹349 |15% of on ₹449"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/b69549ae-772d-4469-92bb-317edc6b1fe9.jpg?tr=w-240,cm-pad_resize",
+      "name": "Buy 2 Get 1 Free On Singles"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/00147c6f-429b-456c-8e94-9648e9ea8ef9.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 40% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/786e665f-3788-4cc3-b7cd-013c3cc2bd75.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 30% Off On Serums"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/5b158056-89a1-4597-aec7-c6a72774ee91.jpg?tr=w-240,cm-pad_resize",
+      "name": "Up To 50% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/23a1bd30-a1e9-4b51-8c47-23f1ce755120.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 10% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/68486602-d922-49e5-8b84-f8cdbc0e364f.jpg?tr=w-240,cm-pad_resize",
+      "name": "Buy 1 Get 1 Free*"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/a4262074-e268-4559-a4c6-ee2149fb2b84.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 10% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/20b0e42d-c6c3-40e6-a9c8-c8e97822fe43.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 33% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/82786659-24fd-4682-a92d-b32942b48948.jpeg?tr=w-240,cm-pad_resize",
+      "name": "On 1800 : 2 Full Size Products"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/65b826c9-ee1a-4aed-9a96-8f6729c174bf.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 20% Off*"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/b1dcb677-0427-4695-97ab-fab6160f6807.jpeg?tr=w-240,cm-pad_resize",
+      "name": "Full Size Product on ₹3500"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/dfd97957-0846-436c-8a14-3b9a80089554.jpg?tr=w-240,cm-pad_resize",
+      "name": "Up To 50% off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/def97b3b-add1-419b-9d31-14872c2d28e3.jpg?tr=w-240,cm-pad_resize",
+      "name": "Up To 40% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/81a09cba-0f82-4d68-ab13-61714933a917.jpg?tr=w-240,cm-pad_resize",
+      "name": "Upto 48% off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/67826fdc-3c01-4c58-be3b-17fc59c7fc40.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 15% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/0821a113-2fb7-4cfc-8b5b-60668f03c7c6.jpg?tr=w-240,cm-pad_resize",
+      "name": "Up To 25% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/1fd5af9a-afe2-47f4-a6d0-52d33df248cc.jpg?tr=w-240,cm-pad_resize",
+      "name": "Flat 15% Off"
+    },
+    {
+      "img1": "https://images-static.nykaa.com/uploads/40486c31-485c-476b-9a59-2c83f567a10a.jpg?tr=w-240,cm-pad_resize",
+      "name": "Buy 3 Get 3 Free"
+    }
+  ]
+}

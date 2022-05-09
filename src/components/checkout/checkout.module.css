@@ -1,0 +1,296 @@
+.nav{
+    display: flex;
+    width: 100%;
+    height: 90px;
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.check1{
+    width: 100%;
+    height: 1000px;
+    background-color:rgb(236,236,236);
+    display: flex;
+    margin: auto;
+}
+
+.icon{
+    width: 110px;
+    height: 90px;
+    margin-left: 150px;
+}
+.add{
+    display: flex;
+    margin-left: 200px;
+}
+.add>div{
+    border-left: 1px solid rgb(236,236,236);
+    border-right: 1px solid rgb(236,236,236);
+    overflow: hidden;
+    height: 80px;
+    margin-top: 10px;
+    width: 200px;
+    border: 0 1px 0 1px solid black;
+}
+.add>div>p:nth-child(2){
+    padding-left: 10px;
+}
+.head{
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.address{
+      font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 20px;
+    color: rgb(252,39,121);
+    
+
+}
+.hr{
+
+    border-bottom: 3px solid rgb(252,39,121);
+}
+.one{
+    margin-left: 10px;
+    width: 250px;
+  height: 130px;
+    margin-left: 200px;
+   
+    background-color: white;
+    text-transform: capitalize;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.onePay{
+        margin-left: 10px;
+    width: 290px;
+  height: 450px;
+    margin-left: 200px;
+    background-color: white;
+    text-transform: capitalize;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.onePay p:nth-child(1){
+    font-size: 20px;
+    color: rgb(252,39,121);
+    font-size: 18px;
+    font-weight: 600;
+
+    
+    border-right: 3px solid rgb(252,39,121);
+
+}
+.onePay>p{
+    padding: 20px 0 20px 0;
+    margin-left: 20px;
+border-bottom: 2px solid rgb(236,236,236);
+}
+
+.one p:nth-child(1){
+    font-size: 20px;
+    color: rgb(252,39,121);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid rgb(236,236,236);
+    border-right: 3px solid rgb(252,39,121);
+margin-left: 20px;
+}
+.one p:nth-child(2){
+    font-size: 20px;
+        padding: 20px;
+        color:rgb(65, 61, 61) ;
+          font-size: 18px;
+}
+.two{
+     margin-left: 10px;
+     width: 500px;
+    height: 250px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.two1{
+     margin-left: 10px;
+     width: 500px;
+    height: 350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.two p:nth-child(1){
+    text-transform: capitalize;
+    padding: 20px 0 5px 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.two p:nth-child(2){
+      padding: 0px 0 5px 20px;
+      font-size: 18px;
+      width: 80%;
+}
+.two p:nth-child(3){
+ padding: 20px 0 5px 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.two>div{
+    border: 1px solid rgb(236,236,236);
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(61, 56, 56);
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+.btn{
+    padding: 20px 60px;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(252,39,121);
+    color: white;
+    border: none;
+}
+.btnPay{
+    padding: 15px 150px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: rgb(252,39,121);
+    color: rgb(252, 251, 251);
+    border: none;
+    margin: 20px;
+}
+.three{
+     margin-left: 10px;
+     width: 380px;
+    height: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.threePay{
+      margin-left: 10px;
+     width: 380px;
+    height: 495px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.color{
+    font-size: 18px;
+    padding: 20px;
+    text-transform: capitalize;
+
+}
+.color{
+    color: rgb(246, 178, 31);
+}
+.product{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(236,236,236);
+    overflow: scroll;
+}
+.product>div{
+width: 90%;
+height: 120px;
+background-color: white;
+margin: 20px 0 20px 20px;
+}
+.total>div{
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.total>div p{
+    padding: 20px 20px 0 20px;
+}
+.green{
+    color:rgb(118,198,200);
+}
+.pink{
+    color: rgb(252,39,121);
+    text-transform: uppercase;
+}
+.choose{
+    background-color: rgb(236,236,236);
+    font-weight: 600;
+    padding-left: 210px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.top_bottom{
+    border-top: 1px solid rgb(236,236,236);
+    border-bottom: 1px solid rgb(236,236,236) ;
+    padding-bottom: 20px;
+  
+}
+.payAdd{
+    width: 100%;
+    height: 200px;
+    background-color:rgb(236,236,236) ;
+}
+.payInput{
+display: flex;
+width: 50%;
+margin-left: 20px;
+
+
+}
+.payInput>input{
+    width: 25%;
+    height: 40px;
+ border: none;
+ font-size: 20px;
+}
+.payInput>input:focus{
+    outline: none;
+}
+.card{
+font-size: 18px;
+font-weight: 700;
+color: rgb(103, 90, 90) ;
+padding: 20px;
+border-bottom: 1px solid rgb(236,236,236)  ;
+}
+#cardNo{
+    width: 80%;
+margin-left: 20px;
+height: 40px;
+margin-top: 10px;
+font-size: 20px;
+border: none;
+border-bottom: 1px solid rgb(236,236,236) ;
+}
+#cardNo:focus{
+    outline: none;
+}
+#cardNo::-webkit-outer-spin-button,
+#cardNo::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ex{
+    text-transform: lowercase;
+    color: rgb(140,137,131);
+margin-top: 20px;
+margin-left: 20px;
+
+}
+.slach{
+    padding:5px;
+    font-size: 20px;
+}

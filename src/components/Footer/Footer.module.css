@@ -1,0 +1,229 @@
+/*=== Footer Newsletter ===*/
+.footer_newsletter {
+    display:flex;
+    width: 100%;
+    background-color: #3f414d;
+    padding: 40px 0;
+    color: #fff;
+    font-size: 15px;
+     justify-content: space-around;
+      font-size: 12px;
+
+}
+
+
+.footer_newsletter span {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.input_box input {
+    border-bottom: 2px solid #fff;
+}
+
+.input_container button {
+    cursor: pointer;
+    background-color: #3f414d;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    max-width: 72px;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 20px;
+}
+
+.app_logo_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.app_logo_container img {
+    padding-right: 0px;
+    width: 150px;
+    height: 50px;
+
+}
+
+.newsletter_contact .contact_details {
+    width: 300px;
+    margin-left: 200px;
+ 
+}
+
+/* footer links */
+
+.footer_links {
+    
+    display: flex;
+    text-align: start;
+    background-color: #8c8d94;
+    color: #fff;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+
+.footer_links li {
+    padding-top: 6px;
+}
+
+.footer_links .nykaa_goal img {
+    width: 6rem;
+    height: 3rem;
+}
+
+.footer_links .top_categories ul {
+    padding-right: 3rem;
+}
+
+.footer_links li:hover {
+    cursor: pointer;
+    color: var(--nykaa-pink);
+}
+
+/* Footer Social */
+.footer_social_container {
+    display:flex;
+    justify-content: space-around;
+    padding: 4rem 0px;
+    font-size: 15px;
+
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.achievements .logo i {
+    font-size: 5rem;
+    color: var(--nykaa-pink);
+}
+
+.achievements .logo_content header {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.achievements .logo_content {
+    padding-left: 1.5rem;
+}
+
+.footer_brand {
+    display:flex;
+    justify-content: space-around;
+}
+
+.footer_social {
+    padding-top: 2rem;
+}
+
+.footer_social ul {
+    padding-top: 1rem;
+}
+
+.footer_social ul i {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.footer_social ul li {
+    padding-left: 0.7rem;
+}
+
+.footer_social ul i:hover {
+    cursor: pointer;
+    color: var(--nykaa-pink);
+    opacity: 1;
+}
+
+.footer_social h3 i {
+    color: var(--nykaa-pink);
+}
+
+/* Footer Copyright */
+
+.footer_copyright_container {
+    padding: 16px 0;
+    background-color: #fc2779;
+    color: #fff;
+    font-size: 12px;
+}
+
+.legal_container {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+    width: 60%;
+    align-self: center;
+    margin: auto;
+}
+
+.legal_container h3:hover {
+    cursor: pointer;
+}
+
+.footer_copyright_container p {
+    font-size: 15px;
+}
+.flex{
+    display:flex;
+    gap: 15px;
+    align-items: center;
+}
+.onlyflex{
+    display:flex;
+    padding:5px 60px;
+    font-size:14px;
+
+}
+.footer_links onlyflex{
+    font-size:100px;
+}
+.nyka{
+  margin-left: 25px;
+}
+.top_categories{
+    margin-bottom: 5px;
+}
+
+.apnaapple{
+    width:100px;
+    height:20px;
+}
+.button{
+    width:25px;
+    height:30px;
+}
+.app_container{
+    width: 500px;
+    margin-top:10px;
+    margin-left: 200px;
+}
+.footer_social > ul > i{
+    font-size:20px;
+    gap:5px;
+}
+.main_box{
+    width: 600px;
+    margin-left: 50px;
+    
+}
+.mail_logo{
+    display:flex;
+}
+.mobile_logo{
+    display:flex;
+}
+
+.contact_details{
+    display:flex_col;
+}
