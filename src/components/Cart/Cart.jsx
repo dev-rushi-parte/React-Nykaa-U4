@@ -36,7 +36,7 @@ export default function Cart() {
         {cartdata.map((i) => {
           return (
             <>
-              {/* {setTotal(total = i.MRPsort*i.qty)} */}
+             
               <div
                 key={i.item}
                 style={{
