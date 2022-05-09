@@ -3,9 +3,9 @@ import {  useNavigate,Link } from "react-router-dom";
 import Cart from "../Cart/Cart";
 
 const HeaderMenu = () => (
-     
+ 
   <div className={style.header_container}>
-      
+        
     <div className={style.header_logo}  >
         <a href="/">  <img
         src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png"

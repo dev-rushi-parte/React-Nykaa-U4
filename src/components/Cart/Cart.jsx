@@ -3,13 +3,20 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { AiOutlineDelete, AiOutlineRight } from "react-icons/ai";
+
 import { CartContext } from "../Context/CartProvider";
 import { useNavigate } from "react-router-dom";
 
+
+import { useNavigate } from "react-router-dom";
+
 export default function Cart() {
+  var totalPrice=0;
+  const navigate=useNavigate();
   const [state, setState] = React.useState({
     right: false,
   });
+
   const {cart,setCartLength,data,setData} = useContext(CartContext);
  const navigate = useNavigate();
   useEffect(() => {
@@ -43,6 +50,14 @@ return elem.item !== i.item
   }
 
 
+  const [total, setTotal] = useState(1000);
+
+  let cartdata = JSON.parse(localStorage.getItem("cartProducts")) ||[];
+    const [data, setdata]=useState(cartdata);
+  //   console.log(cartdata);
+  // let {cart}= CartContext(CartContext);
+
+
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -53,6 +68,14 @@ return elem.item !== i.item
 
     setState({ ...state, [anchor]: open });
   };
+const deleteItem=(id)=>{
+
+  let newData = data.filter((elem) => {
+    return elem.item  !== id;
+  });
+  setdata(newData);
+  localStorage.setItem("cartProducts",JSON.stringify(newData));
+}
 
   const list = (anchor) => (
     <Box
@@ -62,8 +85,15 @@ return elem.item !== i.item
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div>
+
         <h3>Shopping Bag({cart})</h3>
         {data.map((i) => {
+
+        <h3>Shopping Bag({cartdata.length})</h3>
+        {data.map((i) => {
+          totalPrice +=i.MRP*i.qty;
+             localStorage.setItem("total", JSON.stringify(totalPrice));
+
           return (
             <>
               <div
@@ -91,8 +121,13 @@ return elem.item !== i.item
                   </div>
                 </div>
 
+
                 <div style={{}}>
                   <AiOutlineDelete style={{ fontSize: "20px",cursor:"pointer"}} onClick={()=>handleDelete(i)} />
+
+                <div onClick={() => deleteItem(i.item)}>
+                  <AiOutlineDelete style={{ fontSize: "20px" }} />
+
                 </div>
               </div>
               <div
@@ -108,7 +143,7 @@ return elem.item !== i.item
                 <div>
                   <span>Quantity:</span> <span>{i.qty}</span>
                 </div>
-                <div>{i.MRP}</div>
+                <div>₹{i.MRP}</div>
               </div>
             </>
           );
@@ -148,7 +183,9 @@ return elem.item !== i.item
           >
             <span>Grand Total:</span>
             <br />
-            <span>{total}</span>
+            <span>₹{totalPrice}
+
+            </span>
           </div>
           <div
             style={{
@@ -159,7 +196,7 @@ return elem.item !== i.item
               alignItems: "center",
             }}
           >
-            <button
+            <button onClick={()=>navigate("/address")}
               style={{
                 width: "100%",
                 height: "100%",

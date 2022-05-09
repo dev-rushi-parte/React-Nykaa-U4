@@ -33,8 +33,10 @@ export default function Checkout() {
      {cartdata.map((item)=>{
        save=Math.floor((total*10/100));
       discount=total-save;
+
       localStorage.setItem("save",JSON.stringify(save));
       localStorage.setItem("discount",JSON.stringify(discount));
+
          return(
            <>
            <div   key={item.item}

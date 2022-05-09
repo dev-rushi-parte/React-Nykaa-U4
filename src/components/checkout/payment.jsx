@@ -10,6 +10,7 @@ export default function Payment() {
  const inputRef2=useRef(null);
  const inputRef3=useRef(null);
   const navigate=useNavigate();
+
      let total = JSON.parse(localStorage.getItem("total"));
       let save = JSON.parse(localStorage.getItem("save"));
        let discount = JSON.parse(localStorage.getItem("discount"));
@@ -19,6 +20,16 @@ export default function Payment() {
            
              navigate("/paymentsucess")
         
+
+   const btn=()=>{
+         if(inputRef.current.value==123&&inputRef1.current.value==111&& inputRef2.current.value==222&&inputRef3.current.value==333){
+             alert("done");
+             navigate("/")
+         }
+         else{
+            alert("Please enter data");
+         }
+
    }
 
   return (<>

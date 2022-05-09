@@ -44,7 +44,7 @@ export default function Products({ data }) {
 
   const Handleclick = (e) => {
     localStorage.setItem("Products", JSON.stringify(e));
-    navigate("./productsDetails");
+    navigate("/productsDetails");
   };
   return (
     <>
@@ -63,7 +63,7 @@ export default function Products({ data }) {
               <span style={{ textDecoration: "line-through" }}>
                 {elem.MRPcut}
               </span>
-              <span style={{ fontWeight: "bold" }}>{elem.MRP}</span>|
+              <span style={{ fontWeight: "bold", paddingLeft:"10px" }}>₹{elem.MRP}</span>|
               <span>{elem.discount}</span>
               <p>
                 {<AiFillStar />}

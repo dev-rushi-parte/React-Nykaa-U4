@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from './Navbar.module.css';
-
+import { useNavigate } from "react-router-dom";
 const Productpage = () => {
+    const navigate=useNavigate();
   return (
     <div className={style.Productpage}>
       <ul>
@@ -12,8 +13,8 @@ const Productpage = () => {
               Makeup
             </li>
         <div className={style.div1}>
-          <div>
-        
+          <div onClick={()=>navigate("/men")}>
+             
               <h3>Face</h3>
               <p>Face Primer</p>
               <p>Concealer</p>
