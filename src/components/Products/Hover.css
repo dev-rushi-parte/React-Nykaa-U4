@@ -1,0 +1,16 @@
+.divAcc > .divAccHover {
+
+   visibility: hidden;
+    display: flex;
+
+    
+ 
+  }
+  .divAcc:hover .divAccHover{
+      
+      visibility: visible;
+      display: flex;
+      
+      margin: auto;
+      
+  }

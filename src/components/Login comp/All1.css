@@ -1,0 +1,125 @@
+.App {
+    text-align: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+       
+    
+  }
+  .Appsub1{
+    display: inline;
+       
+    height: auto;
+    width: 28%;
+    background-color: white;
+    margin-top: 60px;
+    
+   
+  }
+  .Into1image{
+    height: 70px;
+    width: 70x;
+    background-color: aliceblue;
+  
+  }
+  .into1div{
+   
+    height: 50px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+   margin-top: 150px;
+  
+  }
+  .into1div p{
+    margin-left: 35px;
+  }
+  .email1{
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-top: 30px;
+    
+   
+    
+  }
+  .email1 input{
+    height: 30px;
+    width: 80%;
+    background-color: aliceblue;
+    border: solid rgb(255, 10, 157);
+    text-align: center;
+    margin-left: 8%;
+    margin-top :10px; 
+    
+  }
+  .req{
+    justify-content: end;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 20px;
+    font-size: 10Px;
+    font-weight: 600;
+  
+  }
+  .blank{
+    height: 150px;
+  
+  }
+  .proceed{
+    height: auto;
+    width: 80%;
+   margin-left: 4%;
+    margin-top: -20px;
+   display: flex;
+   justify-content: left;
+    padding-left: 10%;
+  
+   
+    padding-right: 10%;
+  }
+  .proceed button{
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(255, 30, 30);
+      border: none;
+    cursor: pointer;
+   }
+    .proceed1 button{
+    margin-bottom: 20px;
+    margin-left: 9%;
+    height: 50px;
+    width: 80%;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(252,39,121);
+      border: none;
+    cursor: pointer;
+   }
+   .signup_btn{
+     height: 40px;
+     width: auto;
+     margin-top: 20px;
+     background-color: rgb(3, 77, 4);
+     border: solid green;
+     color: aliceblue;
+   }
+  .status{
+    font-size: 20px;
+    font-weight: 500;
+    color: blueviolet;
+    margin-top: 50px;
+  }

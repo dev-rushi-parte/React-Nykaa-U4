@@ -1,0 +1,133 @@
+.App1 {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin: 50px 50px 100px 50px;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+  }
+  .Appsub1{
+    display: inline;
+    height: auto;
+    width: 80%;
+    background-color: white;
+  }
+  .Intoimage{
+    height: 50px;
+    width: 50px;
+  
+  }
+  .intodiv{
+   
+      height: 50px;
+      width: 40%;
+      display: flex;
+      justify-content: left;
+    
+  }
+  .signin{
+    height: 50px;
+    width: 100%;
+   
+    justify-content: left;
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 30px;
+  }
+  .para1{
+   
+      height: 50px;
+      width: 100%;
+    padding-left: 30px;
+     text-align: left;
+     font-size: 16px;
+     font-weight: 400;
+     margin-top: 5px;
+  }
+  .line{
+   
+    height: 1px;
+    margin-top: 5px;
+    width: 100%;
+    
+  }
+
+  .reg{
+   
+    height: 50px;
+    width: 100%;
+  padding-left: 30px;
+   text-align: left;
+   font-size: 16px;
+   font-weight: 400;
+   margin-top: 10px;
+  }
+  .img1{
+   
+    height: 170px;
+    width: 100%;
+  padding-left: 30px;
+   text-align: left;
+   font-size: 16px;
+   font-weight: 400;
+   margin-top: 5px;
+  }
+  .img1 img{
+    height: 100%;
+    width: 80%;
+  }
+  .enterphn{
+   
+    background-color: rgb(255, 12, 109);
+    height: 35px;
+    width: 80%;
+  
+   text-align: left;
+   font-size: 20px;
+   font-weight: 400;
+   margin-top: 5px;
+   
+   color: white;
+   margin-left: 30px;
+  }
+  .google{
+    border: solid rgb(131, 131, 131);
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    width: 80%;
+  display: flex;
+  justify-content: center;
+   text-align: left;
+   font-size: 20px;
+   font-weight: 500;
+   margin-top: 5px;
+   margin-left: 30px;
+  }
+  .google img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    
+  }
+  .last1{
+   
+    height: auto;
+    width: 100%;
+   text-align: left;
+   font-size: 20px;
+   font-weight: 400;
+   margin-top: 5px;
+   color:black;
+  
+  }
+  .last1 div{
+    margin-left: 30px;
+    font-size: 17px;
+  
+  }
+  
+  
+  
