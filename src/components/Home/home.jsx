@@ -12,11 +12,15 @@ import Seller from "./Seller";
 
 import Amazing from "./amazing";
 import Blockbuster from "./blockbuster";
+import Navbar from "../Header/Navbar";
+import Productpage from "../Header/Productpage";
+import Footer from "../Footer/Footer";
 
 export const Home=()=>{
     return<>
 
-     
+     <Navbar/>
+     <Productpage/>
     <img className={style.janvi} src="https://images-static.nykaa.com/uploads/7f834665-5b2f-4a86-94b8-18433066c49e.jpg?tr=w-1200,cm-pad_resize" alt="img"
     width="100%"/>
      <First/>
@@ -80,7 +84,7 @@ export const Home=()=>{
      
           <First/>
 
-         
+         <Footer/>
 
 
     </>

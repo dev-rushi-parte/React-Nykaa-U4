@@ -18,7 +18,7 @@ export default function Mainroutes() {
         <Route path="/login" element={<Auth/>}/>
         <Route path="/login/user" element={<Login/>}/>
         <Route path="/login/user/account" element={<Register/>}/>
-        <Route path='address' element={<Checkout/>}/>
+        <Route path='/address' element={<Checkout/>}/>
         <Route path='/address/payment' element={<Payment/>}/>
 
     </Routes>

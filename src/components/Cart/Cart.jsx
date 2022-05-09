@@ -1,17 +1,46 @@
-import React, { useState } from "react";
+import React, { useState,useEffect, useContext } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { AiOutlineDelete, AiOutlineRight } from "react-icons/ai";
+import { CartContext } from "../Context/CartProvider";
+import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const [state, setState] = React.useState({
     right: false,
   });
-  const [total, setTotal] = useState(1000);
-  let cartdata = JSON.parse(localStorage.getItem("cartProducts"));
-  //   console.log(cartdata);
-  // let {cart}= CartContext(CartContext);
+  const {cart,setCartLength,data,setData} = useContext(CartContext);
+ const navigate = useNavigate();
+  useEffect(() => {
+    totalPrice(data);
+  }, [data])
+  
+  const [total, setTotal] = useState(0);
+
+  
+  
+
+  let totalPrice =(data)=>{
+    let newtotal=data.reduce((acc,elem)=>{
+      return acc+(Number(elem.MRPsort)*elem.qty)
+    },0)
+    setTotal(newtotal)
+  }
+  const HandleClick=()=>{
+navigate('/address')
+  }
+  
+  const handleDelete=(i)=>{
+    let newData = data.filter((elem)=>{
+return elem.item !== i.item
+    })
+    localStorage.setItem("cartProducts",JSON.stringify(newData))
+    setData([...newData])
+    setCartLength(newData.length)
+    totalPrice(newData)
+  }
+
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -32,11 +61,10 @@ export default function Cart() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div>
-        <h3>Shopping Bag({cartdata.length})</h3>
-        {cartdata.map((i) => {
+        <h3>Shopping Bag({cart})</h3>
+        {data.map((i) => {
           return (
             <>
-             
               <div
                 key={i.item}
                 style={{
@@ -63,7 +91,7 @@ export default function Cart() {
                 </div>
 
                 <div style={{}}>
-                  <AiOutlineDelete style={{ fontSize: "20px" }} />
+                  <AiOutlineDelete style={{ fontSize: "20px",cursor:"pointer"}} onClick={()=>handleDelete(i)} />
                 </div>
               </div>
               <div
@@ -84,8 +112,20 @@ export default function Cart() {
             </>
           );
         })}
-      
-        
+        <h4>Payment Details</h4>
+        <div
+          style={{
+            width: "100%",
+            border: "1px solid red",
+            height: "200px",
+            display: "flex",
+          }}
+        >
+          <div style={{display:"flex"}}>
+            <p>Bag Total</p>
+            <p>{total}</p>
+          </div>
+        </div>
         <div
           style={{
             display: "flex",
@@ -124,7 +164,10 @@ export default function Cart() {
                 background: "rgb(252,39,121)",
                 border: "none",
                 fontWeight: "bold",
+                cursor:"pointer"
               }}
+
+              onClick={HandleClick}
             >
               Proceed
               <AiOutlineRight />
@@ -159,7 +202,7 @@ export default function Cart() {
                 bottom: "15px",
               }}
             >
-              {cartdata.length}
+              {cart}
             </div>
           </Button>
           <Drawer

@@ -9,10 +9,12 @@ import { CartProvider } from "./components/Context/CartProvider";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Productpage />
-      <Mainroutes />
-      <Footer />
+      {/* <Navbar />
+      <Productpage /> */}
+      <CartProvider>
+        <Mainroutes />
+      </CartProvider>
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

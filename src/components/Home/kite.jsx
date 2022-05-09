@@ -15,7 +15,7 @@ export default function Kite() {
 setdata(res.data)
 
   })
-  })
+  },[])
   const inputE2 = useRef(null);
 
     const handelLeft=()=>{
