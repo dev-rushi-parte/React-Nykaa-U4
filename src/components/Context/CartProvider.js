@@ -2,13 +2,13 @@ import { createContext, useState } from "react";
 
 export const CartContext = createContext();
 
-export const CartProvider =({childern})=>{
+export const CartProvider =({children})=>{  
     let cartdata = JSON.parse(localStorage.getItem("cartProducts"));
-    console.log(cartdata);
     const [cart,setCartLength]=useState(cartdata.length);
-    const value={cart,setCartLength};
+    const [data,setData]= useState(cartdata)
+    const value={cart,setCartLength,data,setData};
     return <CartContext.Provider value={value}>
-    {childern}
+    {children}
     </CartContext.Provider>
 
 

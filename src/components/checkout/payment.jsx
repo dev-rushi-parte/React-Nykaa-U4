@@ -1,4 +1,3 @@
-
 import React, { useEffect,useRef } from 'react'
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +10,17 @@ export default function Payment() {
  const inputRef2=useRef(null);
  const inputRef3=useRef(null);
   const navigate=useNavigate();
+
+     let total = JSON.parse(localStorage.getItem("total"));
+      let save = JSON.parse(localStorage.getItem("save"));
+       let discount = JSON.parse(localStorage.getItem("discount"));
+     
+   const btn=()=>{
+        
+           
+             navigate("/paymentsucess")
+        
+
    const btn=()=>{
          if(inputRef.current.value==123&&inputRef1.current.value==111&& inputRef2.current.value==222&&inputRef3.current.value==333){
              alert("done");
@@ -19,6 +29,7 @@ export default function Payment() {
          else{
             alert("Please enter data");
          }
+
    }
 
   return (<>
@@ -26,7 +37,7 @@ export default function Payment() {
  <div className={style.choose}>
      <p>CHOOSE PAYMENT METHOD</p>
  </div>
-    <div className={style.check1}>
+    <div className={style.check2}>
     <div className={style.onePay}>
       <p>Credit/Debit Card</p>
       <p>UPI</p>
@@ -48,7 +59,7 @@ export default function Payment() {
                 <input ref={inputRef3} type="Nuumber" placeholder='CVV'></input>
           
       </div>
-      <button onClick={()=>{btn()}} className={style.btnPay}> Pay ₹340 now <i class="fa-solid fa-greater-than"></i></button></div>
+      <button onClick={()=>{btn()}} className={style.btnPay}> Pay ₹{discount} now <i class="fa-solid fa-greater-than"></i></button></div>
    
     <div className={style.threePay}>
       <div className={style.color}>
@@ -57,14 +68,14 @@ export default function Payment() {
 
       <div className={style.total}>
         <div> <p>Sub total</p>
-          <p>₹340</p></div>
+          <p>₹{total}</p></div>
         <div>
           <p>shipping charge</p>
           <p className={style.green}>free</p>
         </div>
         <div>
           <p className={style.green}>discount</p>
-          <p className={style.green}>-₹0</p>
+          <p className={style.green}>-₹{save}</p>
         </div>
         <div>
           <p>Use Reward Points (2000)</p>
@@ -72,7 +83,7 @@ export default function Payment() {
         </div>
         <div className={style.top_bottom}>
           <p>Grand Total</p>
-          <p>₹340</p>
+          <p>₹{discount}</p>
         </div>
       </div>
 

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
+import Footer from "../Footer/Footer";
+import Navbar from "../Header/Navbar";
+import Productpage from "../Header/Productpage";
 const ProductDetails = {
   width: "80%",
   display: "flex",
-
+  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   margin: "auto",
 };
 
@@ -11,14 +14,17 @@ export default function ProductsDetails() {
   let data = JSON.parse(localStorage.getItem("Products"));
   const [Data] = useState([data]);
   return (
-    <div style={{ width: "100%", border: "1px solid blue" }}>
+    <>
+    <Navbar/>
+    {/* <Productpage/> */}
+    <div style={{ width: "100%"}}>
       {Data.map((elem, index) => {
         return (
           <div style={ProductDetails} key={index}>
             <div
               style={{
                 width: "30%",
-                border: "0.5px solid black",
+                
                 padding: "5px",
               }}
             >
@@ -29,7 +35,7 @@ export default function ProductsDetails() {
               />
             </div>
             <div
-              style={{ width: "70%", padding: "5px", border: "1px solid red" }}
+              style={{ width: "70%", padding: "5px",  }}
             >
               <h2>{elem.product_name}</h2>
               <p>
@@ -67,5 +73,6 @@ export default function ProductsDetails() {
         );
       })}
     </div>
-  );
+    <Footer/>
+    </>);
 }

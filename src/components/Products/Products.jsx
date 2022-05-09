@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 // import { data } from "./Data";
 import { useNavigate } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import { FiHeart } from "react-icons/fi";
 import "./Hover.css";
+
+import { CartContext } from "../Context/CartProvider";
 const Grid = {
   padding: "5px",
   boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
@@ -12,25 +14,31 @@ const Grid = {
 
 export default function Products({ data }) {
   let navigate = useNavigate();
+  const {setData,setCartLength} = useContext(CartContext);
+
 
   const SetCartdata = (elem) => {
     const data = JSON.parse(localStorage.getItem("cartProducts")) || [];
     
+    
     let flag = false;
     for (let i = 0; i < data.length; i++) {
       if (data[i].item === elem.item) {
-        alert("iteam already");
-        flag = true;
+        alert("Iteam Already In Cart");
         elem.qty = elem.qty+ 1;
-        console.log(elem.qty)
+        flag = true;
+        
+        
       }
     }
 
     if (flag == false) {
       elem.qty = 1;
       data.push(elem);
+      setData([...data])
+      setCartLength(data.length)
       localStorage.setItem("cartProducts", JSON.stringify(data));
-      alert("iteam added");
+      
     }
   };
 
@@ -40,6 +48,7 @@ export default function Products({ data }) {
   };
   return (
     <>
+    
       {data.map((elem) => {
         return (
           <div style={Grid} className="divAcc">

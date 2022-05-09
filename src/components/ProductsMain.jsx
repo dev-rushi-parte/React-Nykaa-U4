@@ -3,6 +3,9 @@ import Ad from "./AdsSection/Ad";
 import Products from "./Products/Products";
 import Sort from "./SortingSection/Sort";
 import { data } from "./Products/Data";
+import Navbar from "./Header/Navbar";
+import Productpage from "./Header/Productpage";
+import Footer from "./Footer/Footer";
 const style = {
   display: "flex",
   width: "100%",
@@ -18,7 +21,11 @@ const gridDiv = {
 export default function ProductsMain() {
   const [pdata, setData] = useState(data);
   return (
+    <>
+    <Navbar/>
+    <Productpage/>
     <div className="Mainpage">
+
       <h3>All Products ({data.length - 1})</h3>
       <div>
         <Ad />
@@ -35,5 +42,6 @@ export default function ProductsMain() {
         </div>
       </div>
     </div>
-  );
+    <Footer/>
+    </> );
 }

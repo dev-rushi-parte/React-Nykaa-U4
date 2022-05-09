@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {FaRegArrowAltCircleRight,FaRegArrowAltCircleLeft} from 'react-icons/fa'
+import Navbar from "../Header/Navbar";
 import "./ad.css";
 let adsData = [
   {id:"1",
@@ -21,6 +22,8 @@ const prevSlide=()=>{
     setCurrent(current==0? adsData.length-1:current-1);
 }
   return (
+    <>
+    
     <div className="gSlider">
         <FaRegArrowAltCircleLeft className="Left-Arrow" onClick={prevSlide}/>
         <FaRegArrowAltCircleRight className="Right-Arrow" onClick={nextSlide}/>
@@ -33,5 +36,5 @@ const prevSlide=()=>{
         );
       })}
     </div>
-  );
+    </> );
 }
