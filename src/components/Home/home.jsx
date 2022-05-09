@@ -20,8 +20,8 @@ export const Home=()=>{
     return<>
 
 
-     <Navbar/>
-     <Productpage/>
+     {/* <Navbar/> */}
+     {/* <Productpage/> */}
 
    {/* <Navbar />
       <Productpage /> */}
@@ -96,7 +96,7 @@ export const Home=()=>{
          <Footer/>
 
            {/* <Footer /> */}
-           <Footer/>
+           {/* <Footer/> */}
 
 
 

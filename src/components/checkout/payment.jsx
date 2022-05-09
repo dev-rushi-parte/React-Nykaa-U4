@@ -19,16 +19,8 @@ export default function Payment() {
         
            
              navigate("/paymentsucess")
-        
+  
 
-   const btn=()=>{
-         if(inputRef.current.value==123&&inputRef1.current.value==111&& inputRef2.current.value==222&&inputRef3.current.value==333){
-             alert("done");
-             navigate("/")
-         }
-         else{
-            alert("Please enter data");
-         }
 
    }
 
