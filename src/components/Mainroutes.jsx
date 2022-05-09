@@ -13,7 +13,7 @@ export default function Mainroutes() {
     <Routes>
       <Route  path='/' element={<Home/>} />
         <Route path='/men' element={<ProductsMain/>}/>
-        <Route path='/all/productsDetails' element={<ProductsDetails/>}/>
+        <Route path='/productsDetails' element={<ProductsDetails/>}/>
         
         <Route path="/login" element={<Auth/>}/>
         <Route path="/login/user" element={<Login/>}/>

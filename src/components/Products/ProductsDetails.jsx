@@ -44,7 +44,7 @@ export default function ProductsDetails() {
                 {elem.MRPcut}
               </span>
               <span style={{ fontWeight: "bold", fontSize: "20px" }}>
-                {elem.MRP}
+                ₹{elem.MRP}
               </span>
               |<span style={{ color: "green" }}>{elem.discount}</span>
               <p>inclusive of all taxes</p>
